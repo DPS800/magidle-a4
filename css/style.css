@@ -55,6 +55,10 @@ body {
         transform: translate(-7%,-4.25%);
     }
 
+    .square {
+        width: 115% !important;
+    }
+
     .btn-train {
         position: sticky;
     }
@@ -62,12 +66,6 @@ body {
     .tab .col-8 {
         justify-self: end;
         width: 80%;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .container {
-        transform: translate(-8%,3%);
     }
 }
 
