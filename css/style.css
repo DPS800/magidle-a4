@@ -42,6 +42,14 @@ body {
     max-width: 450px !important;
 }
 
+.container-sm.dungeon {
+    background-image: url("../img/bg2.png") !important;
+}
+
+.container-sm.shop {
+    background-image: url("../img/bg3.png") !important;
+}
+
 @media only screen and (max-width: 430px) {
     .container {
         transform: translate(-7%,-4.25%);
