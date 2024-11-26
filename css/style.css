@@ -215,3 +215,9 @@ p.col {
 .eqp button {
     background-color: #BA164F !important;
 }
+
+.fgt button {
+    background-color: #512B9F !important;
+    border-color: #F9FE64 !important;
+    border-width: 3px !important;
+}
