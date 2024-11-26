@@ -43,11 +43,11 @@ body {
 }
 
 .container-sm.dungeon {
-    background-image: url("../img/bg2.png") !important;
+    background-image: url("../img/bg2.png");
 }
 
 .container-sm.shop {
-    background-image: url("../img/bg3.png") !important;
+    background-image: url("../img/bg3.png");
 }
 
 @media only screen and (max-width: 430px) {
@@ -226,4 +226,8 @@ p.col {
     background-color: #512B9F !important;
     border-color: #F9FE64 !important;
     border-width: 3px !important;
+}
+
+.fgt button:hover {
+    background-color: #37217B !important;
 }
