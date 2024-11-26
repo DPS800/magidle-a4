@@ -1,0 +1,217 @@
+body {
+    background-color: black !important;
+    color: white !important;
+    font-family: "Amarante", serif !important;
+}
+
+.amarante-regular {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caudex-regular {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caudex-bold {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.caudex-regular-italic {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.caudex-bold-italic {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.container-sm {
+    background-color: #0B13AC;
+    background-image: url("bg1.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+    max-width: 450px !important;
+}
+
+@media only screen and (max-width: 430px) {
+    .container {
+        transform: translate(-7%,-4.25%);
+    }
+
+    .btn-train {
+        position: sticky;
+    }
+
+    .tab .col-8 {
+        justify-self: end;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        transform: translate(-8%,3%);
+    }
+}
+
+.container {
+    max-width: 450px !important;
+    padding-bottom: 20px;
+
+}
+
+nav button {
+    color: white;
+    background-color: #743CE6;
+    border-width: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav button:hover {
+    background-color: #512B9F;
+}
+
+.tab button {
+    color: white;
+    font-size: 20px;
+    background-color: #512B9F;
+    border-width: 0;
+    width: 240px;
+    height: 40px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+}
+
+button img {
+    width: 50px;
+}
+
+.tab button:hover {
+    background-color: #743CE6;
+}
+
+.tab button:disabled {
+    background-color: #743CE6;
+}
+
+img.mage {
+    width: 40%;
+    margin-bottom: -2px;
+    margin-top: -24px;
+}
+
+.square {
+    width: 402px;
+    height: 228px;
+    background-color: #743CE6;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    align-self: center;
+}
+
+.square .progress {
+    transform: translate(13%,85%);
+    width: 320px;
+    height: 20px;
+    font-size: 15px;
+    background-color: #0EB039;
+    font-family: "Caudex", serif !important;
+}
+
+.square .progress-bar {
+    background-color: #3CE6AA;
+    color: #37217B;
+}
+
+.square .progress.hp {
+    background-color: #512B9F !important;
+}
+
+.square .progress-bar.hp {
+    background-color: #BA164F !important;
+    color: white !important;
+}
+
+.xp-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: translate(-440%,18%);
+    z-index: 1;
+}
+
+.hp-icon {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    transform: translate(-390%,-152%);
+    z-index: 1;
+}
+
+.square .btn-train {
+    padding-top: 37px;
+    font-size: larger;
+}
+
+.square .btn-train button {
+    width: 180px;
+    border-width: 0;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+.square .btn-train button:hover {
+    background-color: #512B9F;
+}
+
+.tooltip-inner {
+    background-color: #37217B !important;
+    color: white !important;
+    font-family: "Caudex", serif;
+}
+
+.tooltip-arrow {
+    display: none !important;
+    border-top-color: trasparent !important;
+}
+
+p.col {
+    font-size: 11px;
+    color: #37217B;
+    font-family: "Caudex", serif;
+}
+
+.btn-train button:hover {
+    background-color: #512B9F !important;
+}
+
+.str button {
+    background-color: #C41700 !important;
+}
+
+.spd button {
+    background-color: #0EB039 !important;
+}
+
+.inl button {
+    background-color: #0674D4 !important;
+}
+
+.eqp button {
+    background-color: #BA164F !important;
+}
