@@ -80,11 +80,11 @@
                 <div class="row align-items-center flex-nowrap posistion-fixed">
                     <div class="col btn-train str">
                         <button type="button" data-toggle="tooltip" data-bs-placement="top"
-                            title="Strength increases your attack damage!" data-bs-toggle="modal" data-bs-target="#trainModal">💪 STRENGTH</button>
+                            title="Strength increases your attack damage!" data-bs-toggle="modal" data-bs-target="#trainModal" onclick="random()">💪 STRENGTH</button>
                     </div>
                     <div class="col btn-train spd">
                         <button type="button" data-toggle="tooltip" data-bs-placement="top"
-                            title="Speed increases your recharge speed!" data-bs-toggle="modal" data-bs-target="#trainModal">👟 S P E E D</button>
+                            title="Speed increases your recharge speed!" data-bs-toggle="modal" data-bs-target="#trainModal" onclick="random()">👟 S P E E D</button>
                     </div>
                 </div>
                 <div class="row align-items-center flex-nowrap posistion-fixed">
@@ -97,7 +97,7 @@
                     <div class="row align-items-center flex-nowrap posistion-fixed">
                         <div class="col btn-train inl">
                             <button type="button" data-toggle="tooltip" data-bs-placement="bottom"
-                                title="Intelligence increases the potency of items!" data-bs-toggle="modal" data-bs-target="#trainModal">📖 INTELLIGENCE</button>
+                                title="Intelligence increases the potency of items!" data-bs-toggle="modal" data-bs-target="#trainModal" onclick="random()">📖 INTELLIGENCE</button>
                         </div>
                         <div class="col btn-train eqp">
                             <a href="equipment.html"><button type="button" data-toggle="tooltip"
@@ -127,7 +127,7 @@
                                 <h1 class="modal-title fs-5" id="trainModalLabel">T R A I N E D !</h1>
                             </div>
                             <div class="modal-body">
-                                Your training was a success!<br>Stat increased by: <div id="myNumber" style="display: inline-block"></div>
+                                Your training was a success!<br>Stat increased by: <div id="myNum" style="display: inline-block"></div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn" data-bs-dismiss="modal">OKAY</button>
