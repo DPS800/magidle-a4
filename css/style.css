@@ -42,15 +42,15 @@ body {
 }
 
 .container-sm.train {
-    background-image: url("bg1.png");
+    background-image: url("../img/bg1.png");
 }
 
 .container-sm.dungeon {
-    background-image: url("bg2.png");
+    background-image: url("../img/bg2.png");
 }
 
 .container-sm.shop {
-    background-image: url("bg3.png");
+    background-image: url("../img/bg3.png");
 }
 
 .container-sm.settings {
