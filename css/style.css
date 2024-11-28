@@ -5,54 +5,61 @@ body {
 }
 
 .amarante-regular {
-  font-family: "Amarante", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .caudex-regular {
-  font-family: "Caudex", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .caudex-bold {
-  font-family: "Caudex", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Caudex", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .caudex-regular-italic {
-  font-family: "Caudex", serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .caudex-bold-italic {
-  font-family: "Caudex", serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Caudex", serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .container-sm {
     background-color: #0B13AC;
-    background-image: url("../img/bg1.png");
     background-repeat: repeat-x;
     background-size: cover;
     max-width: 450px !important;
 }
 
+.container-sm.train {
+    background-image: url("bg1.png");
+}
+
 .container-sm.dungeon {
-    background-image: url("../img/bg2.png");
+    background-image: url("bg2.png");
 }
 
 .container-sm.shop {
-    background-image: url("../img/bg3.png");
+    background-image: url("bg3.png");
+}
+
+.container-sm.settings {
+    background-color: #180F92 !important;
 }
 
 @media only screen and (max-width: 430px) {
     .container {
-        transform: translate(-7%,-4.25%);
+        transform: translate(-7%, -4.25%);
     }
 
     .square {
@@ -83,6 +90,8 @@ nav button {
     height: 75px;
     border-radius: 10px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 nav button:hover {
@@ -117,6 +126,11 @@ img.mage {
     width: 40%;
     margin-bottom: -2px;
     margin-top: -24px;
+    cursor: grab;
+}
+
+img.mage:active {
+    cursor: grabbing;
 }
 
 .square {
@@ -129,7 +143,7 @@ img.mage {
 }
 
 .square .progress {
-    transform: translate(13%,85%);
+    transform: translate(13%, 85%);
     width: 320px;
     height: 20px;
     font-size: 15px;
@@ -155,16 +169,18 @@ img.mage {
     width: 40px;
     height: 40px;
     position: absolute;
-    transform: translate(-440%,18%);
+    transform: translate(-440%, 18%);
     z-index: 1;
+    cursor: help;
 }
 
 .hp-icon {
     width: 45px;
     height: 45px;
     position: absolute;
-    transform: translate(-390%,-152%);
+    transform: translate(-390%, -152%);
     z-index: 1;
+    cursor: help;
 }
 
 .square .btn-train {
@@ -230,4 +246,68 @@ p.col {
 
 .fgt button:hover {
     background-color: #743CE6 !important;
+}
+
+.box {
+    background-color: #512B9F;
+    height: 670px;
+    width: 402px;
+    border-radius: 25px;
+    align-self: center;
+    transform: translateY(-30px);
+    position: absolute;
+    z-index: 1;
+}
+
+h4 {
+    padding: 8px;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 33px;
+    background: #743CE6;
+    outline: none;
+    border-radius: 25px;
+    padding: 7px;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 57px;
+    height: 25px;
+    background: white;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.col.setting {
+    padding: 8px;
+}
+
+.setting button {
+    width: 100%;
+    height: 50px;
+    font-size: 28px;
+    border-radius: 25px;
+    border-width: 0;
+    color: white;
+    background-color: #BA164F;
+}
+
+.setting button:hover {
+    background-color: #743CE6;
+}
+
+.setting.pad.col {
+    padding-top: 45px;
+}
+
+.setting.log button {
+    background-color: #C41700 !important;
+}
+
+.setting.log button:hover {
+    background-color: #37217B !important;
 }
