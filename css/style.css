@@ -39,6 +39,7 @@ body {
     background-repeat: repeat-x;
     background-size: cover;
     max-width: 450px !important;
+    overflow: hidden;
 }
 
 .container-sm.train {
@@ -63,7 +64,7 @@ body {
     }
 
     .square {
-        width: 114% !important;
+        width: 115% !important;
     }
 
     .box {
@@ -76,7 +77,7 @@ body {
 
     .tab .col-8 {
         justify-self: end;
-        width: 79%;
+        width: 80%;
     }
 }
 
