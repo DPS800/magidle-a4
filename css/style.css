@@ -253,6 +253,24 @@ p.col {
     background-color: #743CE6 !important;
 }
 
+.modal-header,.modal-body,.modal-footer,.modal-content {
+    background-color: #743CE6 !important;
+    border-radius: 25px;
+}
+
+.modal-header,.modal-footer {
+    border-color: #F9FE64 !important;
+}
+
+.modal .btn {
+    background-color: #F9FE64 !important;
+    border: none;
+}
+
+.modal .btn:hover {
+    background-color: #512B9F !important;
+}
+
 .box {
     background-color: #512B9F;
     height: 670px;
