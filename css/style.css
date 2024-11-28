@@ -63,7 +63,7 @@ body {
     }
 
     .square {
-        width: 113.9% !important;
+        width: 114% !important;
     }
 
     .box {
@@ -76,7 +76,7 @@ body {
 
     .tab .col-8 {
         justify-self: end;
-        width: 80%;
+        width: 79%;
     }
 }
 
