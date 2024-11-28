@@ -66,6 +66,10 @@ body {
         width: 115% !important;
     }
 
+    .box {
+        width: 107% !important;
+    }
+
     .btn-train {
         position: sticky;
     }
