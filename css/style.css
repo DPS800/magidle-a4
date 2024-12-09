@@ -227,6 +227,11 @@ p.col {
     background-color: #512B9F !important;
 }
 
+.btn-train img {
+    width: 19%;
+    pointer-events: none;
+}
+
 .str button {
     background-color: #C41700 !important;
 }
