@@ -6,9 +6,8 @@
     <!-- METADATA GOES HERE -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Magidle - Dungeon Entrance</title>
-    <meta name="description"
-        content="Are you ready to enter the dungeon? At the dungeon entrance you can either go to your equipment or descend into the fight.">
+    <title>Magidle - Training Camp</title>
+    <meta name="description" content="Welcome to the training camp! Watch and train up your mage here.">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- BOOTSTRAP 5 -->
@@ -35,7 +34,7 @@
 
 <body>
 
-    <div class="container-sm dungeon">
+    <div class="container-sm train">
 
         <!-- Shop, cash text, icons, and settings -->
         <nav class="row align-items-center pt-3">
@@ -59,11 +58,11 @@
         <div class="container text-center">
             <div class="row align-items-center tab flex-nowrap posistion-fixed">
                 <div class="col-4">
-                    <a
-                        href="camp.html"><button type="button" style="width: 150px" data-toggle="tooltip" data-bs-placement="top" title="Walk to the Campsite?">T R A I N...</button></a>
+                    <button type="button" style="width: 150px" disabled>T R A I N...</button>
                 </div>
                 <div class="col-8 text-end">
-                    <button type="button" disabled>D U N G E O N !</button>
+                    <a
+                        href="dungeon.html"><button type="button" data-toggle="tooltip" data-bs-placement="top" title="Walk to the Dungeon?">D U N G E O N !</button></a>
                 </div>
             </div>
 
@@ -77,37 +76,63 @@
                     </div>
                 </div>
 
-                <!-- Fight buttons -->
+                <!-- Strength and speed buttons -->
                 <div class="row align-items-center flex-nowrap posistion-fixed">
-                    <div class="col btn-train fgt">
-                        <a><button type="button" data-toggle="tooltip" data-bs-placement="top" title="Ready to battle in the dungeon?"><img src="img/fgt_icon.svg" alt="Fight icon.">   F I G H T</button></a>
+                    <div class="col btn-train str">
+                        <button type="button" data-toggle="tooltip" data-bs-placement="top" title="Strength increases your attack damage!" data-bs-toggle="modal" data-bs-target="#trainModal" onclick="random()"><img src="img/str_icon.svg" alt="Strength icon.">   STRENGTH</button>
+                    </div>
+                    <div class="col btn-train spd">
+                        <button type="button" data-toggle="tooltip" data-bs-placement="top" title="Speed increases your recharge speed!" data-bs-toggle="modal" data-bs-target="#trainModal" onclick="random()"><img src="img/spd_icon.svg" alt="Speed icon.">   S P E E D</button>
                     </div>
                 </div>
                 <div class="row align-items-center flex-nowrap posistion-fixed">
-                    <p class="col" style="color:#F9FE64; font-size:16px">FLOOR 15</p>
+                    <p class="col">500/1000</p>
+                    <p class="col">725/1000</p>
                 </div>
 
-                <!-- Equipment buttons -->
+                <!-- Intelligence and equipment buttons -->
                 <div style="transform: translateY(-50px)">
                     <div class="row align-items-center flex-nowrap posistion-fixed">
+                        <div class="col btn-train inl">
+                            <button type="button" data-toggle="tooltip" data-bs-placement="bottom" title="Intelligence increases the potency of items!" data-bs-toggle="modal" data-bs-target="#trainModal" onclick="random()"><img src="img/inl_icon.svg" alt="Intelligence icon.">INTELLIGENCE</button>
+                        </div>
                         <div class="col btn-train eqp">
                             <a><button type="button" data-toggle="tooltip" data-bs-placement="bottom" title="Swap around your equipment!"><img src="img/eqp_icon.svg" alt="Equipment icon.">   E Q U I P S</button></a>
                         </div>
                     </div>
                     <div class="row align-items-center flex-nowrap posistion-fixed">
-                        <p class="col" style="font-size:6px">‎ </p>
+                        <p class="col">350/1000</p>
+                        <p class="col"></p>
                     </div>
                 </div>
 
                 <!-- HP icon and bar -->
-                <img src="img/heart.svg" class="hp-icon" alt="HP bar icon." data-toggle="tooltip" data-bs-placement="top" title="Your health is full!" style="margin-top: -0.75px">
-                <div class="progress hp" style="margin-top: -74.75px">
+                <img src="img/heart.svg" class="hp-icon" alt="HP bar icon." data-toggle="tooltip" data-bs-placement="top" title="Your health is full!">
+                <div class="progress hp" style="margin-top: -74px">
                     <div class="progress-bar progress-bar-striped progress-bar-animated hp" role="progressbar"
                         style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100/100</div>
                 </div>
             </div>
         </div>
 
+    </div>
+
+    <!-- Training modal -->
+    <div class="modal fade modal-sm" id="trainModal" tabindex="-1" aria-labelledby="trainModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="trainModalLabel">T R A I N E D !</h1>
+                </div>
+                <div class="modal-body">
+                    Your training was a success!<br>Stat increased by: <div id="myNum" style="display: inline-block">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">OKAY</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
