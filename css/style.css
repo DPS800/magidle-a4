@@ -473,7 +473,8 @@ h4 {
     background-color: #512B9F !important;
 }
 
-input[type="text"],input[type="password"]{
+input[type="text"],
+input[type="password"] {
     background-color: #37217B !important;
     margin-left: 3%;
     margin-right: 3%;
@@ -484,6 +485,7 @@ input[type="text"],input[type="password"]{
     margin-bottom: 5px;
 }
 
-.form-control,input::placeholder {
+.form-control,
+input::placeholder {
     color: #743CE6 !important;
 }
